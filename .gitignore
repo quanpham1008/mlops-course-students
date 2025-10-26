@@ -206,3 +206,17 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 *.joblib
+
+
+# MLflow
+mlruns/
+
+# Ray
+ray_results/
+
+# Logs
+logs/
+
+
+# Database
+mlflow.db

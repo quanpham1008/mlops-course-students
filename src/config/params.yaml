@@ -1,0 +1,31 @@
+experiment_name: housing_price_prediction
+data_path: data/housing.csv
+model_name: linear
+random_seed: 42
+target_col: Price
+
+model_params:
+  random_forest:
+    n_estimators: 150
+    max_depth: 6
+    min_samples_split: 0.2
+
+  linear:
+    fit_intercept: true
+
+  decision_tree:
+    max_depth: 6
+    min_samples_split: 2
+
+  knn:
+    n_neighbors: 5
+    weights: distance
+
+  xgboost:
+    n_estimators: 300
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.0
+    reg_lambda: 1.0
